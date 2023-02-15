@@ -7,4 +7,17 @@
 
 .udvalgte {
   display: grid;
+  gap: 20px;
+}
+
+.udvalgte_knap {
+  text-align: center;
+}
+
+/*****udvalgte genre***/
+
+.grid_genre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
