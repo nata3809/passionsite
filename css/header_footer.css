@@ -1,0 +1,87 @@
+.logo {
+  width: 15rem;
+}
+.nav-links {
+  display: flex;
+  gap: clamp(3rem, 1.2353rem + 3.1373vw, 5rem);
+  place-items: center;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+
+/* hamburgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none; /* Skjul knappen som standard */
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    display: block; /* Viser knappen, når viewporten maksimalt er 600px */
+  }
+
+  .nav-links {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  }
+
+  .nav-links {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .nav-links.shown {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    border-top: 3px solid black;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before {
+  width: 2em;
+  height: 4px;
+  background: black;
+  transition: transform 0.7s cubic-bezier(0, 0.01, 0.24, 1);
+}
+
+.hamburger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 8px;
+}
+
+.pressed .hamburger {
+  transform: rotate(-45deg);
+}
+
+.pressed .hamburger::before {
+  transform: rotate(90deg) translate(8px);
+}
