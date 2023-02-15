@@ -64,6 +64,9 @@ a {
     text-align: center;
     font-size: 2rem;
   }
+  .sogefunktion {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -98,7 +101,11 @@ a {
 }
 
 .sogefunktion {
-  border: 3px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
+  text-align: right;
+}
+.sogefunktion img {
+  width: 2rem;
 }
