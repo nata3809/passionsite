@@ -1,5 +1,5 @@
 .logo {
-  width: 8rem;
+  width: 10rem;
 }
 header {
   background-color: var(--header_footer-farve);
@@ -10,6 +10,7 @@ nav {
   justify-content: space-between;
   padding: 1.5rem;
   place-items: center;
+margin-inline: 5%;
 }
 .nav-links {
   display: flex;
@@ -55,7 +56,10 @@ a {
   display: none; /* Skjul knappen som standard */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+  nav .logo {
+width: 10rem;
+  }
   .toggle-btn {
     display: block; /* Viser knappen, når viewporten maksimalt er 600px */
   }

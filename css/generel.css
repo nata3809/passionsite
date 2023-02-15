@@ -48,6 +48,9 @@ a{
     color: var(--font-farve);
     font-weight: 550;
 }
+nav a{
+    font-size: 1.5rem;
+}
 p{
     max-width: 70ch;
     margin-right: 5px;
@@ -73,7 +76,7 @@ p{
 .elementer div:last-child{
     display: none;
 }
-@media (min-width: 700px){
+@media (min-width: 650px){
     .elementer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
