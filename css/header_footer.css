@@ -118,3 +118,22 @@ a {
 .pressed .hamburger::before {
   transform: rotate(90deg) translate(8px);
 }
+
+/*FOOTER*/
+footer {
+  background-color: #202227;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  place-items: center;
+  text-align: center;
+}
+footer .logo {
+  margin-inline: auto;
+  padding-bottom: 0.8rem;
+}
+
+.gruppemedlemmer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
