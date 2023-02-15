@@ -1,37 +1,64 @@
 .grid_udvalgte {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-inline: auto;
-  gap: 40px;
+  gap: 10%;
+  margin-top: 20px;
 }
-
-.udvalgte {
-  display: grid;
-  gap: 20px;
-}
-
 .udvalgte_knap {
   text-align: center;
+  margin-top: 20px;
 }
 
-/*****udvalgte genre***/
+/********DESKTOP*****/
 
-.grid_genre {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-.genre2 {
-  text-align: center;
-}
-.grid_genre img {
-  width: 50%;
-}
+@media (min-width: 600px) {
+  .grid_udvalgte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-inline: auto;
+    gap: 40px;
+  }
 
-section {
-  margin-top: 7rem;
-}
+  .udvalgte {
+    display: grid;
+    gap: 20px;
+  }
+  .udvalgte_knap {
+    text-align: start;
+    margin-top: 20px;
+  }
+  /*****udvalgte genre***/
 
-#genre {
-  background-color: #223550;
+  .grid_genre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .genre2 {
+    text-align: center;
+  }
+  .grid_genre img,
+  .grid_genre2 img {
+    width: 50%;
+  }
+
+  .grid_3 {
+    display: grid;
+    gap: 20%;
+  }
+
+  .grid_genre2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 3rem;
+  }
+
+  section {
+    margin-top: 4rem;
+  }
+
+  #genre {
+    background-color: #223550;
+  }
 }
