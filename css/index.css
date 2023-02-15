@@ -1,7 +1,10 @@
 .grid_udvalgte {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-inline: auto;
+  gap: 40px;
 }
-.grid_udvalgte img {
-  width: 70%;
+
+.udvalgte {
+  display: grid;
 }
