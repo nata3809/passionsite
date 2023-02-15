@@ -1,5 +1,5 @@
 .logo {
-  width: 15rem;
+  width: 8rem;
 }
 header {
   background-color: #202227;
@@ -27,6 +27,21 @@ a {
 }
 .hide {
   display: none;
+}
+
+/*SØGEFUNKTIONEN*/
+.sogefunktion_mobil {
+  display: none;
+}
+.sogefunktion {
+  border-bottom: 2px solid #f5f5f5;
+  width: 10rem;
+  height: 2.5rem;
+  text-align: right;
+}
+
+.sogefunktion img {
+  width: 2rem;
 }
 
 /* hamburgermenu */
@@ -62,10 +77,14 @@ a {
     flex: 1 1 100%;
     flex-flow: column;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .sogefunktion {
     display: none;
+  }
+  .sogefunktion_mobil {
+    display: inline-block;
+    width: 2rem;
   }
 }
 
@@ -98,14 +117,4 @@ a {
 
 .pressed .hamburger::before {
   transform: rotate(90deg) translate(8px);
-}
-
-.sogefunktion {
-  border-bottom: 2px solid #f5f5f5;
-  width: 10rem;
-  height: 2.5rem;
-  text-align: right;
-}
-.sogefunktion img {
-  width: 2rem;
 }
