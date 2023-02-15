@@ -19,7 +19,7 @@ img {
 }
 
 html{
---header-farve: #202227;
+--header_footer-farve: #202227;
 --baggrund-farve: #474C53;
 --sektion-farve: #223550;
 --logo-farve: #FFA400;
@@ -33,7 +33,7 @@ body{
     color: var(--font-farve);
 }
 header{
-    background-color: var(--header-farve); 
+    background-color: var(--header_footer-farve); 
 }
 main{
     margin-inline: 4%;
@@ -60,4 +60,24 @@ p{
 }
 .cta{
     margin-block-end: 2rem;
+}
+
+.elementer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.genre{
+    margin-block: 2rem;
+}
+.elementer div:last-child{
+    display: none;
+}
+@media (min-width: 700px){
+    .elementer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .elementer div:last-child{
+display: grid;
+    }
 }
