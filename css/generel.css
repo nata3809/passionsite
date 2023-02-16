@@ -76,6 +76,11 @@ p{
 .elementer div:last-child{
     display: none;
 }
+
+.full-width {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
 @media (min-width: 650px){
     .elementer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
