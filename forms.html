@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="forms.css">
     <title>Form</title>
 </head>
 
 <body>
 
-    <form>
-
-        <label for="Full-name">Fulde navn</label>
-        <input>
-        <button>Indsend knap</button>
-    </form>
+    <div class="newsletter_container">
+        <div class="newsletter_img"><img src="img/img1.jpeg" alt=""></div>
+        <div class="newsletter_info">
+          <h2>Hold dig opdateret på film og serier</h2>
+          <p>Subscribe to our newsletter and be the first to receive news about pre-orders and product launches</p>
+          <form action="index.html">
+            <label for="newsletter_full_name">Full Name</label>
+            <input type="text" placeholder="Name" id="newsletter_full_name" />
+            <label for="newsletter_email">Email</label>
+            <input type="email" placeholder="Email" id="newsletter_email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
 
 
 </body>

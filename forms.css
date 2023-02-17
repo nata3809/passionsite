@@ -1,0 +1,48 @@
+.newsletter_info{
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+label, button{
+    display: block;
+    font-weight: 600;
+}
+input{
+font-size: 1rem;
+margin-bottom: 0.8rem;
+}
+button{
+    color: white;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 0.3rem 1rem;
+    border: 1px white solid;
+}
+img{
+    display: none;
+}
+p{
+    max-width: 70ch;
+    color: rgb(228, 228, 228);
+}
+h2{
+    font-size: 1.4rem;
+}
+form{
+    margin-block: 1.5rem;
+
+}
+@media (min-width: 650px ){
+    .newsletter_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-inline: 1rem;
+    }  
+    img{
+        display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    }
+}
