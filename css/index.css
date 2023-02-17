@@ -39,7 +39,7 @@
     text-align: center;
   }
   .grid_genre img,
-  .grid_genre2 img {
+  .grid_film img {
     width: 50%;
   }
 
@@ -48,7 +48,7 @@
     gap: 20%;
   }
 
-  .grid_genre2 {
+  .grid_film {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-block: 3rem;
