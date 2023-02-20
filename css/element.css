@@ -1,8 +1,7 @@
 .element_grid1-2 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  margin: 2rem;
+  gap: rem;
+
 }
 
 .element_grid1-1-1-1 {
@@ -10,6 +9,25 @@
   gap: 2rem;
   margin-bottom: 2rem;
 }
+.element_grid1-1-1-1 :last-child {
+display: none;
+}
 .filminfo {
   display: flex;
+  flex-wrap: wrap;
+}
+.bottom_grid{
+  margin-block: 2rem;
+}
+
+@media (min-width: 650px){
+  .element_grid1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin: 2rem;
+  }
+  .element_grid1-1-1-1 :last-child {
+    display: block
+    }
 }
