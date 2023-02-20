@@ -1,0 +1,15 @@
+.element_grid1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.element_grid1-1-1-1 {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.filminfo {
+  display: flex;
+}
