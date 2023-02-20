@@ -8,7 +8,7 @@ const options = {
 
 const genre = "Gyser"; // urlParams.get("genre");
 console.log("genre", genre);
-const url = `https://passion-172c.restdb.io/rest/filmliste?ratings=${6}`;
+const url = `https://passion-172c.restdb.io/rest/filmliste`;
 console.log("url", url);
 
 //Hent data
@@ -21,6 +21,8 @@ async function hentData() {
 
 function vis(json) {
   console.log(json);
+  if (json.genre == "Gyser") {
+  }
 }
 
 // const skabelon = document.querySelector(".template_gyser").content;
