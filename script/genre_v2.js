@@ -21,6 +21,7 @@ function vis(json) {
   json.forEach((movie) => {
     const klon = template.cloneNode(true);
     klon.querySelector("img").src = movie.billede;
+    klon.querySelector("a").href = "element.html?id=" + movie.id
     movielist.appendChild(klon);
   });
 }
