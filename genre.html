@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,77 +8,84 @@
     <link rel="stylesheet" href="css/genre.css" />
     <link rel="stylesheet" href="css/header_footer.css" />
     <title>Genre</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
-            </div>
+      <nav>
+        <div class="logo">
+          <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
+        </div>
 
-            <div class="sogefunktion_mobil"><img src="img/search_icon.svg" alt="search icon" /></div>
-            <button class="toggle-btn">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="element.html?Type=Serie">Serier</a></li>
-                <li><a class="nav-link" href="element.html?Type=Film">Film</a></li>
-                <li>
-                    <div class="sogefunktion"><img src="img/search_icon.svg" alt="search icon" /></div>
-                </li>
-            </ul>
-        </nav>
+        <div class="sogefunktion_mobil"><img src="img/search_icon.svg" alt="search icon" /></div>
+        <button class="toggle-btn">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="element.html?Type=Serie">Serier</a></li>
+          <li><a class="nav-link" href="element.html?Type=Film">Film</a></li>
+          <li>
+            <div class="sogefunktion"><img src="img/search_icon.svg" alt="search icon" /></div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <section class="genre_header full-width">
+        <h1>FILM</h1>
+        <!-- <div class="filter">
+          <div> -->
+            <!-- <h3>GENRE</h3> -->
+            <select name="Genre">
+              <option value="">ALLE FILM</option>
+              <option value="">GYSER</option>
+              <option value="">KOMEDIE</option>
+              <option value="">ROMANTIK</option>
+              <option value="">DRAMA</option>
+              <option value="">BØRN</option>
+            </select>
+          <!-- </div> -->
+          <!-- <div>
+            <h3>VARIGHED</h3>
+            <select>
+              <option value="">Under 1 time</option>
+              <option value="">Over 1 time</option>
+            </select>
+          </div>
+          <div>
+            <h3>UDGIVELSESÅR</h3>
+            <select>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+            </select>
+          </div>
+          <div>
+            <h3>RATING</h3>
+            <select>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+              <option value="">Årtal</option>
+            </select>
+          </div> -->
+        <!-- </div> -->
+      </section>
 
-        <section class="genre_header full-width">
-            <h1>FILM</h1>
-            <div class="filter">
-                <div>
-                    <h3>GENRE</h3>
-                    <select name="Genre">
-                        <option value="">ALLE FILM</option>
-                        <option value="">GYSER</option>
-                        <option value="">KOMEDIE</option>
-                        <option value="">ROMANTIK</option>
-                        <option value="">DRAMA</option>
-                        <option value="">BØRN</option>
-                    </select>
-                </div>
-                <div>
-                    <h3>VARIGHED</h3>
-                    <select>
-                        <option value="">Under 1 time</option>
-                        <option value="">Over 1 time</option>
-                    </select>
-                </div>
-                <div>
-                    <h3>UDGIVELSESÅR</h3>
-                    <select>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                    </select>
-                </div>
-                <div>
-                    <h3>RATING</h3>
-                    <select>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                        <option value="">Årtal</option>
-                    </select>
-                </div>
-            </div>
-        </section>
+      <!-- skal linke til full view af film/serie -->
+      <section class="list_view">
+        <h2>GENRE</h2>
+        <div class="movielist">
+          <template class="movie_template">
+            <div><img src="" alt="" /></div>
+          </template>
+        </div>
+      </section>
 
-        <!-- skal linke til full view af film/serie -->
-
-        <section class="filmliste">
+      <!-- <section class="filmliste">
             <a href="full_list.html">GYSER</a>
             <div class="film_container"></div>
             <template id="template_gyser">
@@ -147,16 +153,12 @@
 
 
 
+ -->
 
+      <!-- SKAL INDSÆTTES SOM NEDENSTÅENDE, MED TYPE?=  -->
+      <!-- <a href="filmliste.html?cat=Sporting Goods">Sporting Goods</a> -->
 
-
-        <!-- SKAL INDSÆTTES SOM NEDENSTÅENDE, MED TYPE?=  -->
-        <!-- <a href="filmliste.html?cat=Sporting Goods">Sporting Goods</a> -->
-
-
-
-
-        <!-- <section id="element_grid">
+      <!-- <section id="element_grid">
                 <div class="genre">
                     <h2>GYSER</h2>
                     <div class="elementer">
@@ -245,20 +247,20 @@
             </section> -->
     </main>
     <footer>
-        <div class="footer-col">
-            <div class="logo">
-                <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
-            </div>
-            <ul class="gruppemedlemmer">
-                <li>Natasja Nielsen</li>
-                <li>Celine Hansen</li>
-                <li>Lasse Vestergaard</li>
-                <li>Khady Ndiaye</li>
-            </ul>
+      <div class="footer-col">
+        <div class="logo">
+          <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
         </div>
+        <ul class="gruppemedlemmer">
+          <li>Natasja Nielsen</li>
+          <li>Celine Hansen</li>
+          <li>Lasse Vestergaard</li>
+          <li>Khady Ndiaye</li>
+        </ul>
+      </div>
     </footer>
     <script src="script/hamburger.js"></script>
-    <script src="script/genre.js"></script>
-</body>
-
+    <!-- <script src="script/genre.js"></script> -->
+    <script src="script/genre_v2.js"></script>
+  </body>
 </html>
