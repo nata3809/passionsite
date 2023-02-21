@@ -13,7 +13,7 @@ const movielist = document.querySelector(".movielist");
 const template = document.querySelector(".movie_template").content;
 
 async function hentData() {
-  const respons = await fetch(url, options);
+  const respons = await fetch("script/test.json");
   const json = await respons.json();
   data = json;
   vis();
@@ -32,20 +32,13 @@ function vis() {
       const klon = template.cloneNode(true);
       klon.querySelector("img").src = movie.billede;
       klon.querySelector("a").href = "element.html?id=" + movie._id;
+      document.querySelector("h2").textContent = movie.genre;
       movielist.appendChild(klon);
+    }
+    if (filter == "alle"){
+      document.querySelector("h2").textContent = "Alle film"
     }
   });
 }
 
-/* function vis(json) {
-  console.log(json);
-
-  json.forEach((movie) => {
-    const klon = template.cloneNode(true);
-    klon.querySelector("img").src = movie.billede;
-    klon.querySelector("a").href = "element.html?id=" + movie._id;
-    movielist.appendChild(klon);
-  });
-}
- */
 hentData();
