@@ -21,6 +21,11 @@
 .list_view {
   margin-block: 1rem;
 }
+.movielist :nth-child(4),
+.movielist :nth-child(5)
+ {
+  display: none;
+}
 /********DESKTOP*****/
 
 @media (min-width: 650px) {
@@ -28,6 +33,7 @@
   .movielist {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .grid_udvalgte {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -43,6 +49,10 @@
     text-align: start;
     margin-top: 20px;
   }
+  .movielist :nth-child(4)
+ {
+  display: block;
+}
   /*****udvalgte genre***/
 
   .grid_genre {
@@ -83,4 +93,8 @@
   .movielist {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+  .movielist :nth-child(5)
+  {
+   display: block;
+ }
 }

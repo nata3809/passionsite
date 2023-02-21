@@ -7,7 +7,7 @@ const options = {
 };
 
 async function hentData() {
-  const respons = await fetch("script/test.json?max=5");
+  const respons = await fetch("script/test5.json");
   const json = await respons.json();
   vis(json);
 }
