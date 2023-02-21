@@ -23,7 +23,7 @@ function vis(movie) {
   document.querySelector(".filmtitel_bread").textContent = movie.titel;
   document.querySelector(".element_grid1-2 img").src = movie.billede;
   document.querySelector(".filmtitel").textContent = movie.titel;
-  document.querySelector(".year").textContent = movie.year;
+  document.querySelector(".year").textContent = movie.year.slice(0, 10);
   document.querySelector(".time").textContent = movie.varighed;
   document.querySelector(".rating").textContent = movie.ratings + " STJERNER";
   document.querySelector(".filmbeskrivelse").innerHTML = movie.beskrivelse;
