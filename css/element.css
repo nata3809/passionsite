@@ -57,12 +57,13 @@
 .filmtitel_bread {
   color: var(--sektion-farve);
   text-decoration: none;
+  font-weight: 550;
 }
 
 /* Add a color on mouse-over */
 .breadcrumb ul li a:hover,
 .genre:hover,
-.filmtitel_bread:hover {
+li .filmtitel_bread:hover {
   color: var(--logo-farve);
   text-decoration: underline;
 }
