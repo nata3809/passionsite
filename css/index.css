@@ -9,9 +9,25 @@
   margin-top: 20px;
 }
 
+.movielist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.movielist img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.list_view {
+  margin-block: 1rem;
+}
 /********DESKTOP*****/
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+
+  .movielist {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   .grid_udvalgte {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -60,5 +76,11 @@
 
   #genre {
     background-color: #223550;
+  }
+}
+
+@media (min-width: 1000px) {
+  .movielist {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
