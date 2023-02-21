@@ -4,8 +4,6 @@ const options = {
   headers: {
     "x-apikey": "63ef4921478852088da683c2",
   },
-    "x-apikey": "63ef4921478852088da683c2",
-  },
 };
 
 let data = [];
