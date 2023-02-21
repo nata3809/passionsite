@@ -1,0 +1,69 @@
+.element_grid1-2 {
+  display: grid;
+  gap: rem;
+}
+
+.element_grid1-1-1-1 {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.element_grid1-1-1-1 :last-child {
+  display: none;
+}
+.filminfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom_grid {
+  margin-block: 2rem;
+}
+
+@media (min-width: 650px) {
+  .element_grid1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin: 2rem;
+  }
+  .element_grid1-1-1-1 :last-child {
+    display: block;
+  }
+}
+
+/* Style the list */
+.breadcrumb ul {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+.breadcrumb ul li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+.breadcrumb ul li a,
+.genre,
+.filmtitel_bread {
+  color: var(--sektion-farve);
+  text-decoration: none;
+  font-weight: 550;
+}
+
+/* Add a color on mouse-over */
+.breadcrumb ul li a:hover,
+.genre:hover,
+li .filmtitel_bread:hover {
+  color: var(--logo-farve);
+  text-decoration: underline;
+}

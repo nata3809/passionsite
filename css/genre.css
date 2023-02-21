@@ -1,37 +1,50 @@
-.genre_header{
-    padding-inline: 4%;
-    background-color: var(--sektion-farve);
-    text-align: center;
+.genre_header {
+  padding-inline: 4%;
+  background-color: var(--sektion-farve);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
 }
-.genre_header h1{
-    font-size: 3rem;
+.genre_header h1 {
+  font-size: 3rem;
 }
-.filter {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  gap: 2rem;
 
-  padding-block: 1.5rem 3rem;
-
-}
-.filter h3{
-    text-align: start;
-}
 select {
-  width: 100%;
-  padding-block: 0.2rem;
-  padding-left: 0.5rem;
+  width: fit-content;
+  padding-inline: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
   color: var(--font-farve);
   background-color: transparent;
   border: solid 2px;
   cursor: pointer;
+  height: 2rem;
 }
 
-@media (min-width: 650px){
-    .filter{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+.movielist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.movielist img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.list_view {
+  margin-block: 1rem;
+}
+@media (min-width: 650px) {
+  .filter {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .movielist {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .movielist {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
