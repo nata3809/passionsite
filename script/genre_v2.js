@@ -32,21 +32,9 @@ function vis() {
       const klon = template.cloneNode(true);
       klon.querySelector("img").src = movie.billede;
       klon.querySelector("a").href = "element.html?id=" + movie._id;
-      // document.querySelector("h1").textContent = movie.genre;
       movielist.appendChild(klon);
     }
   });
 }
 
-/* function vis(json) {
-  console.log(json);
-
-  json.forEach((movie) => {
-    const klon = template.cloneNode(true);
-    klon.querySelector("img").src = movie.billede;
-    klon.querySelector("a").href = "element.html?id=" + movie._id;
-    movielist.appendChild(klon);
-  });
-}
- */
 hentData();
