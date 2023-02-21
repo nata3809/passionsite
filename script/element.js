@@ -12,7 +12,7 @@ const options = {
   },
 };
 async function hentData() {
-  const respons = await fetch(url, options);
+  const respons = await fetch("script/test.json");
   const json = await respons.json();
   vis(json);
 }
