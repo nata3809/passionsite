@@ -26,6 +26,12 @@
  {
   display: none;
 }
+#genre p,
+#genre h2,
+#genre a{
+margin-inline: 4%;
+}
+
 /********DESKTOP*****/
 
 @media (min-width: 650px) {
@@ -85,7 +91,7 @@
   }
 
   #genre {
-    background-color: #223550;
+    background-color: var(--sektion-farve);
   }
 }
 

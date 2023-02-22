@@ -1,115 +1,105 @@
 <!DOCTYPE html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/header_footer.css" />
+    <title>Forside</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/generel.css" />
-  <link rel="stylesheet" href="css/header_footer.css" />
-  <title>Forside</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
-      </div>
-
-      <div class="sogefunktion_mobil"><img src="img/search_icon.svg" alt="search icon" /></div>
-      <button class="toggle-btn">
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="genre.html">Film</a></li>
-        <li>
-          <div class="sogefunktion"><img src="img/search_icon.svg" alt="search icon" /></div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="list_view">
-      <h2>Udvalgte film</h2>
-      <div class="movielist">
-        <template class="movie_template">
-          <a href=""> <img src="" alt="" /></a>
-        </template>
-      </div>
-    </section>
-
-    <section id="genre">
-      <div class="grid_genre">
-        <div class="genre2">
-          <img src="img/img2.jpeg" alt="p" />
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
         </div>
 
-        <div>
-          <div>
-            <h2>Månedens genre</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis neque veniam consequuntur culpa,
-              quo aperiam suscipit iusto veritatis, minus ipsa consequatur harum magni vitae odio velit sunt nisi illo
-              tempora.</p>
+        <div class="sogefunktion_mobil"><img src="img/search_icon.svg" alt="search icon" /></div>
+        <button class="toggle-btn">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="genre.html">Film</a></li>
+          <li>
+            <div class="sogefunktion"><img src="img/search_icon.svg" alt="search icon" /></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="list_view">
+        <h2>Udvalgte film</h2>
+        <div class="movielist">
+          <template class="movie_template">
+            <a href=""> <img src="" alt="" /></a>
+          </template>
+        </div>
+      </section>
+
+      <section id="genre" class="full-width">
+        <div class="grid_genre">
+          <div class="genre2">
+            <img src="img/img2.webp" alt="p" />
           </div>
 
-          <div class="udvalgte_knap">
-            <div class="cta">
+          <div>
+            <div>
+              <h2>Månedens genre</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis neque veniam consequuntur culpa, quo aperiam suscipit iusto veritatis, minus ipsa consequatur harum magni vitae odio velit sunt nisi illo tempora.</p>
+            </div>
 
-              <a href="genre.html">Udforsk månedens genre</a>
+            <div class="udvalgte_knap">
+              <div class="cta">
+                <a href="genre.html">Udforsk månedens genre</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section>
-      <div class="grid_film">
-        <div>
+      <section>
+        <div class="grid_film">
           <div>
-            <h2>Månedens Film</h2>
-          </div>
-          <div class="udvalgte_film_titel">
-            <h2></h2>
-          </div>
-          <div class="udvalgte_film_text">
+            <div>
+              <h2>Månedens Film</h2>
+            </div>
+            <div class="udvalgte_film_titel">
+              <h2></h2>
+            </div>
+            <div class="udvalgte_film_text">
+              <p></p>
+            </div>
 
-            <p></p>
-          </div>
-
-          <div class="udvalgte_knap">
-            <div class="cta">
-              <a class="udvalgt_film_knap" href="">Udforsk månedens film</a>
+            <div class="udvalgte_knap">
+              <div class="cta">
+                <a class="udvalgt_film_knap" href="">Udforsk månedens film</a>
+              </div>
             </div>
           </div>
+          <div class="genre2">
+            <img class="udvalgt_film_img" src="s" alt="p" />
+          </div>
         </div>
-        <div class="genre2">
-          <img class="udvalgt_film_img" src="s" alt="p">
+      </section>
+    </main>
+    <footer>
+      <div class="footer-col">
+        <div class="logo">
+          <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo" /></a>
         </div>
+        <ul class="gruppemedlemmer">
+          <li>Natasja Nielsen</li>
+          <li>Celine Hansen</li>
+          <li>Lasse Vestergaard</li>
+          <li>Khady Ndiaye</li>
+        </ul>
       </div>
-    </section>
-
-
-
-  </main>
-  <footer>
-    <div class="footer-col">
-      <div class="logo">
-        <a href="index.html" aria-label="Hjem"><img class="logo" src="img/logo.svg" alt="WeWatch logo"></a>
-      </div>
-      <ul class="gruppemedlemmer">
-        <li>Natasja Nielsen</li>
-        <li>Celine Hansen</li>
-        <li>Lasse Vestergaard</li>
-        <li>Khady Ndiaye</li>
-      </ul>
-    </div>
-  </footer>
-  <script src="script/hamburger.js"></script>
-  <script src="script/index.js"></script>
-</body>
-
+    </footer>
+    <script src="script/hamburger.js"></script>
+    <script src="script/index.js"></script>
+  </body>
 </html>
