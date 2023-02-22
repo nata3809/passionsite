@@ -40,15 +40,16 @@
 
 /* Style the list */
 .breadcrumb ul {
-  padding: 10px 16px;
+  /* padding: 10px 16px; */
   list-style: none;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 /* Display list items side by side */
 .breadcrumb ul li {
   display: inline;
-  font-size: 18px;
+  font-size: 0.8rem;
+  color: var(--font-farve);
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -62,9 +63,11 @@
 .breadcrumb ul li a,
 .genre,
 .filmtitel_bread {
-  color: var(--sektion-farve);
+  /* color: var(--sektion-farve); */
   text-decoration: none;
   font-weight: 550;
+  color: var(--font-farve);
+  font-size: 0.8rem;
 }
 
 /* Add a color on mouse-over */
