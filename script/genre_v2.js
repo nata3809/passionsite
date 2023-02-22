@@ -16,6 +16,14 @@ async function hentData() {
   const respons = await fetch("script/test.json");
   const json = await respons.json();
   data = json;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const genre = urlParams.get("genre");
+  console.log(genre);
+  if (genre) {
+    filter = genre;
+  }
+
   vis();
 }
 
@@ -35,8 +43,8 @@ function vis() {
       document.querySelector("h2").textContent = movie.genre;
       movielist.appendChild(klon);
     }
-    if (filter == "alle"){
-      document.querySelector("h2").textContent = "Alle film"
+    if (filter == "alle") {
+      document.querySelector("h2").textContent = "Alle film";
     }
   });
 }

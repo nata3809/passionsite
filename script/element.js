@@ -19,7 +19,12 @@ async function hentData() {
 
 function vis(movie) {
   console.log(movie);
-  document.querySelector(".genre").textContent = movie.genre;
+
+  //BREADCRUMB, linker tilbage til den respektive genre
+  const a = (document.querySelector(".genre").textContent = movie.genre);
+  a.textContent = movie.genre;
+  a.href = "/genre.html?genre=" + movie.genre;
+
   document.querySelector(".filmtitel_bread").textContent = movie.titel;
   document.querySelector(".element_grid1-2 img").src = movie.billede;
   document.querySelector(".filmtitel").textContent = movie.titel;
