@@ -10,13 +10,14 @@ nav {
   justify-content: space-between;
   padding: 1.5rem;
   place-items: center;
-margin-inline: 5%;
+/* margin-inline: 5%; */
 }
 .nav-links {
   display: flex;
   gap: clamp(3rem, 1.2353rem + 3.1373vw, 5rem);
   place-items: center;
 }
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -123,6 +124,9 @@ width: 10rem;
   transform: rotate(90deg) translate(8px);
 }
 
+.breadcrumb{
+  padding-inline: 0;
+}
 /*FOOTER*/
 footer {
   background-color: var(--header_footer-farve);
