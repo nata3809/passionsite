@@ -12,7 +12,7 @@ const options = {
   },
 };
 async function hentData() {
-  const respons = await fetch("script/test.json");
+  const respons = await fetch(url, options);
   const json = await respons.json();
   vis(json);
 }
@@ -24,7 +24,7 @@ function vis(movie) {
   document.querySelector(".element_grid1-2 img").src = movie.billede;
   document.querySelector(".filmtitel").textContent = movie.titel;
   document.querySelector(".year").textContent = movie.year.slice(0, 10);
-  document.querySelector(".rating").textContent = movie.ratings + "/10 STJERNER";
+  document.querySelector(".rating").textContent = movie.ratings + "/10 rating";
   document.querySelector(".filmbeskrivelse").innerHTML = movie.beskrivelse;
 }
 
