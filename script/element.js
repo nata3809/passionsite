@@ -24,6 +24,7 @@ function vis(movie) {
   const a = (document.querySelector(".genre").textContent = movie.genre);
   a.textContent = movie.genre;
   a.href = "/genre.html?genre=" + movie.genre;
+  //
 
   document.querySelector(".filmtitel_bread").textContent = movie.titel;
   document.querySelector(".element_grid1-2 img").src = movie.billede;
