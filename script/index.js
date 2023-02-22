@@ -28,6 +28,8 @@ function vis(json) {
 
 hentData();
 
+///////Månedens film
+
 const url2 = `https://passion-172c.restdb.io/rest/filmliste/63ea210daa860750000545bc`;
 
 const options2 = {
@@ -41,6 +43,8 @@ async function hentData2() {
   console.log(json);
   vis2(json);
 }
+
+//funktion som viser filmen, samt bestemmer de værdier som skal vises
 
 function vis2(movie) {
   console.log(movie);
