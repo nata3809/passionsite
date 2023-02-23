@@ -8,8 +8,7 @@ const options = {
   },
 };
 
-//Funktionen hentData indeholder en asynkron operation,
-//der først henter data fra en lokal JSON-fil ved hjælp af fetch,
+//Funktionen enter data fra en lokal JSON-fil ved hjælp af fetch,
 //derefter konverterer JSON-responsen til en JavaScript-objekt ved hjælp af .json()-metoden
 //og til sidst kalder vis()-funktionen med det modtagne objekt.
 async function hentData() {
@@ -72,3 +71,28 @@ function vis2(movie) {
 }
 
 hentData2();
+// const url2 = `https://passion-172c.restdb.io/rest/filmliste/63ea210daa860750000545bc`;
+
+// const options2 = {
+//   headers: {
+//     "x-apikey": "63ef4921478852088da683c2",
+//   },
+// };
+// async function hentData2() {
+//   const respons = await fetch(url2, options2);
+//   const json = await respons.json();
+//   console.log(json);
+//   vis2(json);
+// }
+
+// //funktion som viser filmen, samt bestemmer de værdier som skal vises
+
+// function vis2(movie) {
+//   console.log(movie);
+//   document.querySelector(".udvalgt_film_knap").href = "element.html?id=" + movie._id;
+//   document.querySelector(".udvalgt_film_img").src = movie.billede;
+//   document.querySelector(".udvalgte_film_titel").textContent = movie.titel;
+//   document.querySelector(".udvalgte_film_text").innerHTML = movie.beskrivelse;
+// }
+
+// hentData2();
